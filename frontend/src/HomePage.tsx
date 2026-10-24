@@ -11,7 +11,9 @@ function HomePage() {
       {/* Navigation Bar */}
       <header>
         <nav className="navbar">
-          <h1>Luxury Nail Spa</h1>
+          <h1>
+            <img src="logo.png" alt="Luxury Nail Spa"></img>
+          </h1>
 
           <div className="nav-links">
             <a href="https://luxurynailspaoh.com/" target="_blank"><Globe size={20} color="#d8b46a" /></a>
