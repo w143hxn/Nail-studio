@@ -1,34 +1,22 @@
 
 import './HomePage.css';
 import homepagePic from './assets/images/Homepage-Picture.png';
-import { Paintbrush, Scan, Search, Globe } from 'lucide-react';
-import { FaFacebookF, FaInstagram } from "react-icons/fa";
+import { Paintbrush, Scan, Search } from 'lucide-react';
+import Navbar from './components/Navbar';
 
 function HomePage() {
   return (
     <div className="homepage">
 
       {/* Navigation Bar */}
-      <header>
-        <nav className="navbar">
-          <h1>
-            <img src="logo.png" alt="Luxury Nail Spa"></img>
-          </h1>
-
-          <div className="nav-links">
-            <a href="https://luxurynailspaoh.com/" target="_blank"><Globe size={20} color="#d8b46a" /></a>
-            <a href="https://www.facebook.com/luxurynailspaohio" target="_blank"> <FaFacebookF size={20} color="#d8b46a" /></a>
-            <a href="https://www.instagram.com/luxurynailspa_dayton/" target="_blank"> <FaInstagram size={20} color="#d8b46a" /></a>
-          </div>
-        </nav>
-      </header>
+      <Navbar />
 
       {/* Main Content */}
       <main>
 
         {/* HomePage Image */}
         <section className="HomePage-Pic">
-          <img src={homepagePic} />
+          <img src={homepagePic} alt="Luxury Nail Spa" />
         </section>
 
         {/* Introduction */}
@@ -37,34 +25,31 @@ function HomePage() {
           <h1>Your Dream Nails, Just a Click Away.</h1>
 
           <a href="#explore" className="explore-button">
-            EXPLORE OUR BEAUTIFUL ARTS  →
+            EXPLORE OUR BEAUTIFUL ARTS →
           </a>
         </section>
-
 
         {/* Features */}
         <section className="features">
 
           <a href="#nail-gallery" className="feature">
-          <Paintbrush size={26} color="#d8b46a" />
-           Find Nail Color
+            <Paintbrush size={26} color="#d8b46a" />
+            Find Nail Color
           </a>
 
           <a href="#color-match" className="feature">
-          <Scan size={26} color="#d8b46a" />
+            <Scan size={26} color="#d8b46a" />
             Scan Your Designs
           </a>
 
           <a href="#find-service" className="feature">
-          <Search size={26} color="#d8b46a" />
+            <Search size={26} color="#d8b46a" />
             Find Your Services
           </a>
 
         </section>
 
-
       </main>
-
     </div>
   );
 }

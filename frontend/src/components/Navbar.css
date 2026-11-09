@@ -1,0 +1,36 @@
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 8px 28px;
+  }
+  
+  .navbar h1 {
+    display: flex;
+    width: 100px;
+    margin: 0px;
+  }
+  
+  .navbar h1 img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  
+  .nav-links a {
+    color: #f5f0e8;
+    text-decoration: none;
+    font-size: 13px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #d8b46a;
+  }
+  
