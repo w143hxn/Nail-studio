@@ -1,4 +1,3 @@
-
 import './Navbar.css';
 import { Globe } from 'lucide-react';
 import { FaFacebookF, FaInstagram } from 'react-icons/fa';
